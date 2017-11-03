@@ -16,7 +16,7 @@ export class ContactComponent implements OnInit {
 
   pureEmail = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
   phone = '[\+]?[0-9() ]{5,}$';
-  name = '[a-zA-Z]{1,}'
+  name = '[a-zA-Z]{1,}';
 
   formErrors = {
       'firstname': '',
@@ -93,7 +93,6 @@ export class ContactComponent implements OnInit {
 
   onSubmit() {
     this.feedback = this.feedbackForm.value;
-    console.log(this.feedback);
     this.feedbackForm.reset({
         firstname: '',
         lastname: '',

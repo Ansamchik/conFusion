@@ -4,7 +4,11 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
-import { MaterialModule } from '@angular/material';
+// import { MaterialModule } from '@angular/material';
+import { MatButtonModule, MatCheckboxModule, MatDatepickerModule, MatFormFieldModule,
+    MatInputModule, MatRadioModule, MatSelectModule, MatSliderModule,
+    MatSlideToggleModule, MatToolbarModule, MatListModule, MatGridListModule,
+    MatCardModule, MatIconModule, MatProgressSpinnerModule, MatDialogModule } from '@angular/material';
 import { FlexLayoutModule } from '@angular/flex-layout';
 
 import 'hammerjs';
@@ -43,7 +47,11 @@ import { LoginComponent } from './login/login.component';
     FormsModule,
     ReactiveFormsModule,
     HttpModule,
-    MaterialModule,
+      MatButtonModule, MatCheckboxModule, MatDatepickerModule, MatFormFieldModule,
+      MatInputModule, MatRadioModule, MatSelectModule, MatSliderModule,
+      MatSlideToggleModule, MatToolbarModule, MatListModule, MatGridListModule,
+      MatCardModule, MatIconModule, MatProgressSpinnerModule, MatDialogModule,    FlexLayoutModule,
+//    MaterialModule,
     FlexLayoutModule,
     AppRoutingModule
   ],
