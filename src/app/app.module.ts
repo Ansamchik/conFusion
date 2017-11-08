@@ -28,6 +28,9 @@ import { PromotionService } from './services/promotion.service';
 import { LeadersService } from './services/leaders.service';
 import { LoginComponent } from './login/login.component';
 
+import { baseURL } from './shared/baseurl';
+import { ProcessHTTPMsgService } from './services/process-httpmsg.service';
+
 
 @NgModule({
   declarations: [
@@ -51,13 +54,14 @@ import { LoginComponent } from './login/login.component';
       MatInputModule, MatRadioModule, MatSelectModule, MatSliderModule,
       MatSlideToggleModule, MatToolbarModule, MatListModule, MatGridListModule,
       MatCardModule, MatIconModule, MatProgressSpinnerModule, MatDialogModule,    FlexLayoutModule,
-//    MaterialModule,
     FlexLayoutModule,
     AppRoutingModule
   ],
   providers: [ DishService,
-               PromotionService,
-                LeadersService ],
+        PromotionService,
+        LeadersService,
+        ProcessHTTPMsgService,
+      { provide: 'BaseURL', useValue: baseURL } ],
   entryComponents: [ LoginComponent ],
   bootstrap: [AppComponent]
 })
